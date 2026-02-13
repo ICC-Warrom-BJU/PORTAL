@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #eaffe5, #f6fff4);
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 300;
+            color: #555;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 10px;
+        }
+
+        a.card {
+            text-decoration: none;
+            color: inherit;
+            background: #ffffff;
+            border: 2px solid #CCEDC5;
+            border-radius: 20px;
+            padding: 28px 15px;
+            text-align: center;
+            transition: 0.25s ease;
+            cursor: pointer;
+            display: block;
+        }
+
+        a.card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+        }
+
+        .icon-box {
+            background: #00a532;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 15px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-box i {
+            font-size: 32px;
+            color: white;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            opacity: 0.7;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Portal Dashboard</h1>
+    <h2>Pilih dashboard yang ingin Anda akses</h2>
+
+    <div class="dashboard-grid">
+
+        <a href="https://kallagroup.sharepoint.com/sites/AccountingHOKallaTransLog/SitePages/Dashboard-Pencapaian-Kalla-Translog.aspx" class="card">
+            <div class="icon-box"><i class="bi bi-currency-dollar"></i></div>
+            <div class="title">Dashboard Revenue</div>
+            <div class="subtitle">Dashboard pencapaian (Power BI)</div>
+        </a>
+
+        <a href="https://kallagroup.sharepoint.com/sites/ProjectPlanningBusinessControl/SitePages/Project-Evaluasi.aspx" class="card">
+            <div class="icon-box"><i class="bi bi-graph-up"></i></div>
+            <div class="title">Project Evaluasi</div>
+            <div class="subtitle">Evaluasi Performance Project & Branch (Power BI)</div>
+        </a>
+
+        <a href="https://kallagroup.sharepoint.com/:u:/s/ProjectPlanningBusinessControl/IQBVhD2oA8TyQZfVBxwZvALlATnS9zRbg9mMCBybMMHT9Vg?e=Lw5sjL" class="card">
+            <div class="icon-box"><i class="bi bi-bar-chart-steps"></i></div>
+            <div class="title">Budget Investasi</div>
+            <div class="subtitle">Project Rental (Power BI)</div>
+        </a>
+
+        <a href="https://kallagroup.sharepoint.com/sites/INFORMATIONCENTER-IT/SitePages/DASHBOARD-MONITORING-LOG-ACTIVITY-ARMADA.aspx?ga=1" class="card">
+            <div class="icon-box"><i class="bi bi-list-columns-reverse"></i></div>
+            <div class="title">Dashboard Activity Armada</div>
+            <div class="subtitle">MOLA (Power BI)</div>
+        </a>
+
+        <a href="https://ivms.kallatranslog.co.id/" class="card">
+            <div class="icon-box"><i class="bi bi-car-front"></i></div>
+            <div class="title">TMS BJU</div>
+            <div class="subtitle">Transportation Management System</div>
+        </a>
+
+        <a href="https://dashcam.tramigovideo.com/resource/dev/index.html?t=242920#/fleetIndex" class="card">
+            <div class="icon-box"><i class="bi bi-car-front-fill"></i></i></div>
+            <div class="title">TMS PCN</div>
+            <div class="subtitle">GPS Dashcam Project PCN</div>
+        </a>
+
+        <a href="https://www.raztel.com/vms/" class="card">
+            <div class="icon-box"><i class="bi bi-water"></i></div>
+            <div class="title">TMS BLT</div>
+            <div class="subtitle">Tracking Armada Tugboat</div>
+        </a>
+
+        <a href="https://frosy.kallatranslog.co.id/" class="card">
+            <div class="icon-box"><i class="bi bi-snow2"></i></div>
+            <div class="title">Frosy System</div>
+            <div class="subtitle">Walls Legacy System (Odoo)</div>
+        </a>
+
+        <a href="https://maintenance.kallatranslog.co.id/" class="card">
+            <div class="icon-box"><i class="bi bi-gear"></i></div>
+            <div class="title">New Maintenance</div>
+            <div class="subtitle">Vale Implementation (Odoo)</div>
+        </a>
+
+        <a href="https://carpool.bju-jenius.com/" class="card">
+            <div class="icon-box"><i class="bi bi-speedometer"></i></div>
+            <div class="title">Carpooling System</div>
+            <div class="subtitle">Vale Implementation</div>
+        </a>
+
+        <a href="https://jenius.kallatranslog.co.id/" class="card">
+            <div class="icon-box"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+            <div class="title">Jenius</div>
+            <div class="subtitle">Aplikasi Jenius (Legacy System)</div>
+        </a>
+
+        <a href="https://cabo.kallatranslog.co.id/" class="card">
+            <div class="icon-box"><i class="bi bi-bus-front-fill"></i></div>
+            <div class="title">Cahaya Bone</div>    
+            <div class="subtitle">Powered by Odoo</div>
+        </a>
+
+        <a href="https://www.appsheet.com/start/afc5cc52-9cd4-42b4-a511-301de2b9899e?platform=desktop#appName=CRMTRANSPORTER-585726212&vss=H4sIAAAAAAAAA62PywrCMBBFf0VmnS_ILkjRIi3SFjfGRWymEGyT0qRqCfl3Ux8ILtXl3Ms53PFwVngpnahPQPf-fW1wAgqeQzX1yIFyWBrtBtNyIBxy0T3CbVJkaV4xli_WrFgxDgHCgbw8Di1Q_52G_mcNASVRO9UoHGbnbIiuJx_rmY7BJwuBQDc6cWzx_khkQ4hZY-rRotzFaT9MsqlOrr3QMjMyqhvRWgw3APX_uo0BAAA=&view=PERMINTAAN%20HARGA" class="card">
+            <div class="icon-box"><i class="bi bi-cash"></i></div>
+            <div class="title">CRM Transporter</div>
+            <div class="subtitle">Appsheet Base</div>
+        </a>
+
+        <a href="https://lms.kallatranslog.co.id/" class="card">
+            <div class="icon-box"><i class="bi bi-truck"></i></div>
+            <div class="title">LMS (Running)</div>
+            <div class="subtitle">Logistic Management System (Odoo)</div>
+        </a>
+
+        <a href="https://example.com" class="card">
+            <div class="icon-box"><i class="bi bi-hexagon-fill"></i></div>
+            <div class="title">Empty</div>
+            <div class="subtitle">Empty</div>
+        </a>
+
+        <a href="https://example.com" class="card">
+            <div class="icon-box"><i class="bi bi-hexagon-fill"></i></div>
+            <div class="title">Empty</div>
+            <div class="subtitle">Empty</div>
+        </a>
+
+        <a href="https://example.com" class="card">
+            <div class="icon-box"><i class="bi bi-hexagon-fill"></i></div>
+            <div class="title">Empty</div>
+            <div class="subtitle">Empty</div>
+        </a>
+        <a href="https://example.com" class="card">
+            <div class="icon-box"><i class="bi bi-hexagon-fill"></i></div>
+            <div class="title">Empty</div>
+            <div class="subtitle">Empty</div>
+        </a>
+
+        <a href="https://example.com" class="card">
+            <div class="icon-box"><i class="bi bi-hexagon-fill"></i></div>
+            <div class="title">Empty</div>
+            <div class="subtitle">Empty</div>
+        </a>
+
+        <a href="https://example.com" class="card">
+            <div class="icon-box"><i class="bi bi-hexagon-fill"></i></div>
+            <div class="title">Empty</div>
+            <div class="subtitle">Empty</div>
+        </a>
+
+    </div>
+
+</body>
+</html>
